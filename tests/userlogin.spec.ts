@@ -13,7 +13,6 @@ test.beforeEach(async ({ page }) => {
   await loginPage.gotoLogin(url);
 });
 
-
 test.describe('Scenario : Verify that a user can complete a full purchase journey, from logging in to logging out, on the Sauce Demo website', () => {
   test('user สามารถทำการเลือกซื้อสินค้าพร้อม checkout สำเร็จ', async ({ page }) => {
     const loginPage = new LoginPage(page);
