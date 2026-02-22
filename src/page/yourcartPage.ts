@@ -1,12 +1,10 @@
 import { expect, Locator, Page } from "@playwright/test";
 
-
 export class YourCardPage {
     readonly page: Page;
     readonly checkoutBtn: Locator
     readonly pageTitle: Locator
     
-
     constructor(page: Page) {
         this.page = page;
         this.checkoutBtn = page.locator('[data-test="checkout"]');
